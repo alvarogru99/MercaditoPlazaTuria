@@ -1,0 +1,17 @@
+{
+    "name": "victorjfg/dawfony",
+    "description": "php MVP mini-framework: template inheritance & mysql interaction helper. For educative purposes only.",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "victorjfg"
+            
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"dawfony\\": "src/"}
+    }
+}

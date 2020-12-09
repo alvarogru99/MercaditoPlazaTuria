@@ -1,0 +1,205 @@
+<?php
+// necesitamos la trayectoria de la URL para formar las rutas:
+global $URL_PATH;
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>
+        <?php \dawfony\Ti::startBlock("title"); ?>
+        Mercadito Plaza Turia
+        <?php \dawfony\Ti::endBlock(); ?>
+    </title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel=”shortcut icon” type=”image/ico” href=”img/favicon.ico”/>
+    
+    <!--Mis JS-->
+    <script src="<?= $URL_PATH ?>/js/comprar.js"></script>
+    <script src="<?= $URL_PATH ?>/js/main.js"></script>
+    <script src="<?= $URL_PATH ?>/js/cesta.js"></script>
+    <script src="<?= $URL_PATH ?>/js/incrementarCantidades.js"></script>
+    <script src="<?= $URL_PATH ?>/js/validar.js"></script>
+    <script src="<?= $URL_PATH ?>/js/validaTarjeta.js"></script>
+    <script src="<?= $URL_PATH ?>/js/mixitup.min.js"></script>
+
+    <!-- Alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script>
+        var URL_PATH = "<?= $URL_PATH ?>"; // Pasamos el URL_PATH de php a Javascript.
+    </script>
+    <script>
+        var articulos = <?= $data ?>;
+    </script>
+    <style>
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+    <script href="https://github.com/OwlCarousel2/OwlCarousel2/blob/develop/dist/assets/owl.carousel.css"></script>
+    <?php /* Bootstrap.CDN */ ?>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <?php /* Font awesome CDN */ ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <?php /* Animate.css CDN */ ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+    <?php \dawfony\Ti::startBlock("head"); ?>
+    <?php \dawfony\Ti::endBlock(); ?>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <!-- <div id="preloder">
+        <div class="loader"></div>
+    </div> -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="https://www.facebook.com/vizuetemoreno.pollerias"><i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="assets/language.png" alt="">
+                                <div>Español</div>
+                                <ul>
+                                    <li><a href="#">Español</a></li>
+                                    <li><a href="#">Inglés</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <?php if (!isset($_SESSION["login"])) : // no hay usuario logueado
+                                ?>
+                                    <div>
+                                        <a class="nav-link" href="<?= $URL_PATH ?>/registro">Registro</a>
+                                    </div>
+                                    <div>
+                                        <a class="nav-link" href="<?= $URL_PATH ?>/login">Login</a>
+                                    </div>
+                                <?php else : // si hay usuario logueado
+                                ?>
+                                    <div>
+                                        <a class="nav-link" href="#" onclick="confirmarLogout()">Cerrar sesión</a>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="<?= $URL_PATH ?>/"><img src="assets/logo.jpg" width="100" height="100" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="<?= $URL_PATH ?>/">Inicio</a></li>
+                            <li><a href="<?= $URL_PATH ?>/productos">Productos</a></li>
+                            <li><a href="<?= $URL_PATH ?>/contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3" id="formCompra">
+                    <div class="header__cart">
+                        <ul>
+                            <?php if ($data != 0) : ?>
+                                            <li><a href="<?= $URL_PATH ?>/realizarCompra"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <?php else : ?>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <?php endif; ?>
+                            <!-- <li><a href="#"><i class="fa fa-shopping-bag"></i> <span><?= $data ?> Articulo(s)</span></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+   
+    <?php \dawfony\Ti::startBlock("content"); ?>
+    <?php \dawfony\Ti::endBlock(); ?>
+    <!-- Footer -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <ul>
+                            <li>Direccion: C. Río Ebro, 36, Móstoles, Madrid</li>
+                            <li>Telefono: 916 05 99 47</li>
+                            <li>Email: yunermander@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Enlaces de Interés</h6>
+                        <ul>
+                            <li><a href="<?=$URL_PATH?>/productos">Ofertas</a></li>
+                            <li><a href="<?=$URL_PATH?>/productos">Listado de Productos</a></li>
+                            <li><a href="<?=$URL_PATH?>/contacto">Localizacion</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="<?=$URL_PATH?>/">Tiendas</a></li>
+                            <li><a href="<?=$URL_PATH?>/contacto">Sobre nosotros</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>¡Siguenos en nuestras redes!</h6>
+                        <div class="footer__widget__social">
+                            <a href="https://www.facebook.com/vizuetemoreno.pollerias"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

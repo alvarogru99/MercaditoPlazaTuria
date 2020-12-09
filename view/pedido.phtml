@@ -1,0 +1,90 @@
+<?php
+global $URL_PATH;
+\dawfony\Ti::extend("view/mainview.phtml");
+\dawfony\Ti::startBlock("content");
+?>
+
+
+<main>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                <br>
+                <form  autocomplete="off" action="<?= $URL_PATH ?>/login"  method='get'>
+                    
+
+                    <div id="carrito" class="table-responsive">
+                        <table class="table" id="lista-compra">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Sub Total</th>
+                                    <th scope="col">Eliminar</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <?php foreach ($productos as $sacarProducto) : ?>
+                                    <tr>
+                                        <td><img src="<?=$URL_PATH?>/assets/<?= $sacarProducto->img ?>" width="170" height="120"></td>
+                                        <td><b><?= $sacarProducto->nombre ?></b></td>
+                                        <td><?= $sacarProducto->precio ?>€</td>
+                                        <td>
+                                            <div class="input-group mb-3">
+                                                <a href="javascript:void(0)" class="btn btn-success" onclick="incrementar(<?= $sacarProducto->clave ?>,<?= $sacarProducto->precio ?>,<?= $sumaTotal ?>)">+</a>
+                                                <span class="input-group-text" id="<?= $sacarProducto->clave ?>"><?= $sacarProducto->cantidad ?></span>
+                                                <a href="javascript:void(0)" class="btn btn-danger" onclick="decrementar(<?= $sacarProducto->clave ?>,<?= $sacarProducto->precio ?>,<?= $sumaTotal ?>)">-</a>
+                                            </div>
+                                        </td>
+                                        <td id="<?= $sacarProducto->clave . $sacarProducto->clave ?>">
+                                            <?= $sacarProducto->cantidad * $sacarProducto->precio ?> €
+                                        </td>
+
+                                        <td><a href="<?= $URL_PATH ?>/eliminarProductoCompra/<?= $sacarProducto->clave ?>"><i class="fa fa-trash-o pull-left"></i></a></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-xs-12 col-md-4">
+                            <?php if ($productos == null) : ?>
+                                <script>
+                                    Swal.fire({
+                                        icon: 'error',
+                                        type: 'info',
+                                        title: 'Oops...',
+                                        text: '¡No hay articulos!',
+                                        timer: 2000,
+                                        showConfirmButton: false
+                                    });
+                                </script>
+                                <a href="javascript:void(0)" class=" btn btn-success btn-block" >Realizar compra</a>
+                                <td><a href="<?= $URL_PATH ?>/vaciarCesta" class="btn btn-danger btn-block pull-right">Vaciar Cesta</a></td>
+                                    <?php else:?>
+                                <button type="submit" class=" btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                                <td><a href="<?= $URL_PATH ?>/vaciarCesta" class="btn btn-danger btn-block pull-right">Vaciar Cesta</a></td>
+
+                            <?php endif ?>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+</main>
+<?php
+\dawfony\Ti::endBlock();
+\dawfony\Ti::endExtend();
+?>

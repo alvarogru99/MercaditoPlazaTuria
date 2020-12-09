@@ -1,0 +1,58 @@
+<?php
+global $URL_PATH;
+\dawfony\Ti::extend("view/mainview.phtml");
+\dawfony\Ti::startBlock("content");
+?>
+
+<script>
+    if ('<?= $sacarDatosPedido->pago ?>' == "ok") {
+        Swal.fire({
+            icon: 'success',
+            type: 'info',
+            title: 'Compra realizada con exito',
+            timer: 4000,
+            showConfirmButton: false
+        });
+    } else if ('<?= $sacarDatosPedido->pago ?>' == "nook") {
+        Swal.fire({
+            icon: 'warning',
+            type: 'info',
+            title: 'Ha habido algún error..',
+            text: 'Por favor, intentelo más tarde...',
+            timer: 5000,
+            showConfirmButton: false
+        });
+    } else if ('<?= $sacarDatosPedido->pago ?>' == "cancelado") {
+        Swal.fire({
+            icon: 'error',
+            type: 'info',
+            title: 'La compra ha sido cancelada',
+            timer: 4000,
+            showConfirmButton: false
+        });
+    }
+</script>
+
+<?php if($sacarDatosPedido->pago == "ok"):?>
+    <center><h1>Muchas gracias por su compra</h1></center>
+    <center><h6>En breves instantes obtendrá su juego...</h6></center>
+    <br>
+    <p>Este es tu "KEY" del juego es:<b> <?= $sacarDatosPedido->cod_operacion ?></b>
+    <br>
+    <pre>En caso de incidencia póngase en contacto con nosotros
+    Via e-mail:&nbsp;<a href="mailto:aac@versusgaming.com">aac@versusgaming.com</a>
+    Via telefono : &nbsp;<b>601070829</b>.</pre>
+    <br>
+    <p> No dude en volver a comprar en nuestra tienda    </p>
+    <br>
+<?php endif;?>
+
+<!-- Hay que poner una URL para eliminar ya a ese usuario y su pedido... VAMOS TODO BORRADO -->
+<center><a href="<?= $URL_PATH ?>/eliminarDatos/<?=$cod_pedido?>" class="btn btn-dark  ">Volver</a></center>
+<br>
+
+
+<?php
+\dawfony\Ti::endBlock();
+\dawfony\Ti::endExtend();
+?>

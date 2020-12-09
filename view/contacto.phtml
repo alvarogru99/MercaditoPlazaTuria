@@ -1,0 +1,105 @@
+<?php
+global $URL_PATH;
+\dawfony\Ti::extend("view/mainview.phtml");
+\dawfony\Ti::startBlock("content");
+?>
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="assets/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Contacto</h2>
+                        <div class="breadcrumb__option">
+                            <a href="<?=$URL_PATH?>/">Inicio</a>
+                            <span>Contacto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <img src="assets/telefono.png" style="width: 18%;">
+                        <h4>Telefono</h4>
+                        <p>916 05 99 47</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <img src="assets/direccion.png" style="width: 18%;">
+                        <h4>Direccion</h4>
+                        <p>C. Río Ebro, 36, Móstoles, Madrid</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <img src="assets/horario.png" style="width: 18%;">
+                        <h4>Horario</h4>
+                        <p>Abiertos de 8:00 a 20:00</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <img src="assets/facebook.png" style="width: 18%;">
+                        <h4>Facebook</h4>
+                        <a href="https://www.facebook.com/plazaturiamercadito/">PlazaturiaMercadito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Map Begin -->
+    <div class="map">
+    <iframe width="800" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=C.%20R%C3%ADo%20Ebro%2C%2036%2C%2028935%20M%C3%B3stoles%2C%20Madrid&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <div class="map-inside">
+            <i class="icon_pin"></i>
+            <div class="inside-widget">
+                <h4>Mercado Plaza Turia</h4>
+                <ul>
+                    <li>Phone: +12-345-6789</li>
+                    <li>Direción: C. Río Ebro, 36, Móstoles, Madrid</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Map End -->
+
+    <!-- Contact Form Begin -->
+    <div class="contact-form spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact__form__title">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+            <form action="#">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" placeholder="Nombre Completo">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" placeholder="Correo Electronico">
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <textarea placeholder="Dejanos tu duda, problema, solicitud aqui"></textarea>
+                        <button type="submit" class="site-btn">ENVIAR MENSAJE</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<?php
+\dawfony\Ti::endBlock();
+\dawfony\Ti::endExtend();
+?>

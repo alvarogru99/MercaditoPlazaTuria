@@ -1,0 +1,236 @@
+<?php
+global $URL_PATH;
+\dawfony\Ti::extend("view/mainview.phtml");
+\dawfony\Ti::startBlock("content");
+?>
+ <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Todos los departamentos</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Carniceria</a></li>
+                            <li><a href="#">Polleria</a></li>
+                            <li><a href="#">Pescaderia</a></li>
+                            <li><a href="#">Producto Pre-Cocinado</a></li>
+                            <li><a href="#">Pan</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>916 05 99 47</h5>
+                                <span>Abiertos de 8:00 a 20:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__item set-bg">
+                        <img src="assets/banner.jpg">
+                        <div class="hero__text">
+                            <h2>Alimentos <br />100% Frescos</h2>
+                            <a href="<?=$URL_PATH?>/productos" class="primary-btn">PIDE AHORA</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+  </section>
+    <!-- Categories Section Begin -->
+    
+
+    <!--Carousel Wrapper-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://estaticos.qdq.com/swdata/home_photos/674/674286961/22ab1bda63d3411da35965f35c98773e.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Pescadería</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://estaticos.qdq.com/swdata/home_photos/467/467608971/6524449deec042feab0c7f979f3a44cf.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Carniceria</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://estaticos.qdq.com/swdata/home_photos/638/638911164/57fa7ac812fc4cc69d6d26138702448c.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Polleria</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+      <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://www.esciupfnews.com/wp-content/uploads/2020/04/confinamiento-consumo.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Producto Precocinado</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://estaticos.qdq.com/swdata/home_photos/055/055619644/5e5dc94ddb0840d7a3ef04be9f62a04c.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Panaderia</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://www.semana.com/resizer/cehBL2S6Yx5ofnnMBJnbarnUABE=/1920x1080/filters:format(jpg):quality(70)//cloudfront-us-east-1.images.arcpublishing.com/semana/52HMKBUZDFDG7J5CT5FCIXAAI4.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Mucho más</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+      </div>
+      <!--/.Slides-->
+
+  </div>
+    <!--/.Carousel Wrapper-->
+  <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Productos en Oferta</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">Todos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+              <?php $cuenta=0;
+              foreach ($productos as $producto) :?>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="featured__item">
+                      <div>
+                        <img src="<?=$URL_PATH?>/assets/<?=$producto->img?>" width="280" height="200">
+                        <ul class="img_hover">
+                        <li><a href="javascript:void(0)" onclick="compra(<?= $producto->id ?>)" data-id="<?= $producto->id ?>"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                      </div>
+                        <div class="featured__item__text">
+                            <h6><a href="<?=$URL_PATH?>/producto/<?=$producto->id?>"><?=$producto->nombre?></a></h6>
+                            <h5><?=$producto->precio?>€</h5>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach?>
+            </div>
+        </div>
+    </section>
+ <!-- ********************** Modal ******************************************* -->
+  <script>
+      function compra(id) {
+        console.log("Realizamos compra de Producto con id " + id);
+        // Esto es jquery, copiado de la documentación de bootstrap.
+        $('#productosModal').modal('show'); // mostrar div oculto de manera modal. 
+        comprarProducto(id);
+      }
+  </script>
+
+
+    <div class="modal fade" id="productosModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Producto añadido correctamente al carrito </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <img id="imagen" width="70" >
+                <strong>
+                  x
+                  <span id="contadorCantidad">
+                  </span>
+                </strong>
+                &nbsp;&nbsp;- &nbsp;&nbsp;<p id="nombre"></p> &nbsp;&nbsp;=
+                &nbsp;
+                  <p id="precio"></p>&euro;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <b> TOTAL:&nbsp;<b>
+                <b><p id="totalprecio"></p><b>
+            </div>
+          </div> -->
+          <div class="modal-footer">
+            <a href="<?= $URL_PATH ?>/realizarCompra" type="button" class="btn btn-secondary" >Realizar Compra</a>
+            <a href="<?= $URL_PATH ?>" type="button" class="btn btn-primary">Seguir Comprando</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</script>
+
+<?php
+\dawfony\Ti::endBlock();
+\dawfony\Ti::endExtend();
+?>

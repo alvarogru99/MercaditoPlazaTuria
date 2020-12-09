@@ -1,0 +1,14 @@
+{
+    "name": "victor/prudawfony",
+    "type": "project",
+    "require": {
+        "noahbuscher/macaw": "dev-master",
+        "victorjfg/dawfony": "dev-master",
+        "twbs/bootstrap": "dev-master",
+        "oneistbesser/owl-carousel": "dev-master"
+    },
+    "authors": [{
+        "name": "Alvaro"
+    }],
+    "minimum-stability": "dev"
+}

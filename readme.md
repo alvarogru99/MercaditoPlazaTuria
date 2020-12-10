@@ -12,7 +12,7 @@
 
 **Mercado Plaza Turia**<br><br>
 
-**Índice**<br><br><br>
+**Índice**<br><br>
 
 
 **1.Introducción…………………………………………………………………………………..**<br>

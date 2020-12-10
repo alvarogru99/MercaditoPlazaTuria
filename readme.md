@@ -169,21 +169,24 @@ Nos vamos a la pestaña de privilegios, agregar nuevo usuario y tendremos esta p
 
 
 ## 4. Tareas<br>
-TAREA	ENTREGABLE	FECHA	ASIGNADO<br>
-Elaboración Mockups	Entregado	11/10/2020	Álvaro Grueso <br>
-Main view	Entregado	23/10/2020	Álvaro Grueso<br>
-Listado	Entregado	27/10/2020	Álvaro Grueso<br>
-Base de Datos	Entregado	1/11/2020	Álvaro Grueso<br>
-Login	Entregado	5/11/2020	Álvaro Grueso<br>
-Registro	Entregado	5/11/2020	Álvaro Grueso<br>
-Pedido y pasarela	Entregado	7/11/2020	Álvaro Grueso<br>
-Main view retoques	Entregado	7/11/2020	Álvaro Grueso<br>
-Listado Retoques	Entregado	8/11/2020	Álvaro Grueso<br>
-Documentación	Entregado	15/12/2020	Álvaro Grueso<br>
-Base de Datos	Entregado	22/11/2020	Alvaro Grueso<br>
-Retoques General	Entregado	28/11/2020	Álvaro Grueso<br>
-Documentación	Entregado	8/12/2020	Álvaro Grueso<br>
-Presentación	Entregado	10/12/2020	Álvaro Grueso<br>
+
+| TAREA        | ENTREGABLE       | FECHA | ASIGNADO           |
+| ------------------- |:---------:|:-----:|-------------:|
+| Elaboración Mockups | Entregado | 11/10/2020 | Álvaro Grueso |
+| Main view | Entregado | 23/10/2020 | Álvaro Grueso |
+| Listado | Entregado | 27/10/2020 | Álvaro Grueso |
+| Base de Datos | Entregado | 1/11/2020 | Álvaro Grueso |
+| Login | Entregado | 5/11/2020 | Álvaro Grueso |
+| Registro | Entregado | 5/11/2020 | Álvaro Grueso |
+| Pedido y pasarela | Entregado | 7/11/2020 | Álvaro Grueso |
+| Main view retoques | Entregado | 7/11/2020 | Álvaro Grueso |
+| Listado Retoques | Entregado | 8/11/2020 | Álvaro Grueso |
+| Documentación | Entregado | 15/12/2020 | Álvaro Grueso |
+| Base de Datos | Entregado | 22/11/2020 | Álvaro Grueso |
+| Retoques General | Entregado | 28/11/2020 | Álvaro Grueso |
+| Documentación | Entregado | 8/12/2020 | Álvaro Grueso |
+| Presentación | Entregado | 10/12/2020 | Álvaro Grueso |
+
 <br><br>
 
 ## 5. Cosas que me ha costado en el proyecto<br><br>

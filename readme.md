@@ -96,11 +96,10 @@ Aquí adjunto el mockup, pero podéis ver que los cambios respecto a la interfaz
 # 1.8 ¿ EXISTEN RIESGOS?<br>
 Hay pequeños riesgos de seguridad, digo pequeños porque siempre hay riesgos a perder  información, claves, etc.. <br>
 Hay un método de pago que es externo a la aplicación dando una seguridad completa al  usuario al realizar la compra. <br>
-Hay seguridad de privacidad con una cuenta y clave propia al usuario con una verificación  obligatoria mediante su email.<br><br>
-
-Se recomienda que la gente que utiliza esta aplicación y esté logueada, sea responsable y siempre pedimos que sea alguien mayor de edad.<br>
+Hay seguridad de privacidad con una cuenta y clave propia al usuario con una verificación  obligatoria mediante su email.<br>
+Se recomienda que la gente que utiliza esta aplicación y esté logueada, sea responsable y siempre pedimos que sea alguien mayor de edad.<br><br>
 **¿QUÉ FUNCIONALIDADES TIENE VUESTRA APLICACIÓN?**<br><br>
-Las funcionalidades de la aplicación son las siguientes: <br>
+Las funcionalidades de la aplicación son las siguientes: <br><br>
 Los usuarios NO registrados, solo podrán utilizar la aplicación para ver la interfaz ya que no  permitimos el uso de la misma, por los siguientes motivos: <br><br>
 Los usuarios SI registrados, pueden navegar por toda la aplicación, y realizar pagos, pedidos y ver las ultimas ofertas<br><br>
 **¿QUE ROLES FORMAN ÉSTA APLICACIÓN?**<br><br>

@@ -10,32 +10,32 @@
 
 
 
-**Mercado Plaza Turia
+**Mercado Plaza Turia**
 
 **Índice**
 
 
-**1.Introducción…………………………………………………………………………………..**
-**1.1 Motivaciones Personales……………………………………………………...………….**
-**1.2 La empresa………………………………………………………………...………………..**
-**1.3 Clientes…………………………………………...........…………………………………...**
-**1.4 Objetivos………………………………..................………………………………………**
-**1.5 Glosario……………………………………………......................………………………..**
-**1.6 ¿En qué y por qué me he basado para crear esta aplicación web?......…...........**
-**1.7 Interfaz………………………………………………………………….………………….…**
-**1.8 Riesgos………………………………………………………………….………………….…**
-**1.8 Análisis………………………………………………………………….………………….…**
-**2.1 Usabilidad de la Aplicación………………………………………………………………….**
-**3. Diseño……………………………………………………………………………………………..**
-**3.1. Arquitectura…………………………………………………………………………………..**
-**3.2. Documentación de diseño………………………………………………………………….**
-**3.3. Construcción de la aplicación……………………………………………………………..**
-**4. Tareas……………………………………………………………………………………………..**
-**5. Cosas que me ha costado en el proyecto…………………………………………………..**
+**1.Introducción…………………………………………………………………………………..**<br>
+**1.1 Motivaciones Personales……………………………………………………...………….**<br>
+**1.2 La empresa………………………………………………………………...………………..**<br>
+**1.3 Clientes…………………………………………...........…………………………………...**<br>
+**1.4 Objetivos………………………………..................………………………………………**<br>
+**1.5 Glosario……………………………………………......................………………………..**<br>
+**1.6 ¿En qué y por qué me he basado para crear esta aplicación web?......…...........**<br>
+**1.7 Interfaz………………………………………………………………….………………….…**<br>
+**1.8 Riesgos………………………………………………………………….………………….…**<br>
+**1.8 Análisis………………………………………………………………….………………….…**<br>
+**2.1 Usabilidad de la Aplicación………………………………………………………………….**<br>
+**3. Diseño……………………………………………………………………………………………..**<br>
+**3.1. Arquitectura…………………………………………………………………………………..**<br>
+**3.2. Documentación de diseño………………………………………………………………….**<br>
+**3.3. Construcción de la aplicación……………………………………………………………..**<br>
+**4. Tareas……………………………………………………………………………………………..**<br>
+**5. Cosas que me ha costado en el proyecto…………………………………………………..**<br>
 
 
 
-##1. Introducción
+##1. Introducción<br>
 El proyecto final consiste en el desarrollo de una aplicación Web que permita la venta de productos de un comercio local al público. Esta idea de proyecto empezó a partir de la necesidad de expandir el comercio local a través de otras zonas o lugares, modernizarse y poder ponerse al nivel de mercado actual ya que la mayoría de establecimientos de comercio tienen su sitio en el Internet actual.
 
 ##1.1 Motivaciones Personales
